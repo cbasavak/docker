@@ -103,3 +103,6 @@ docker-compose ps: List all running containers defined in a docker-compose.yml f
 docker-compose logs: Display logs from all containers defined in a docker-compose.yml file.
 docker-compose exec: Execute a command inside a running container defined in a docker-compose.yml file.
 docker-compose build: Build Docker images defined in a docker-compose.yml file.
+
+docker commit my_container my_new_image:latest()
+
