@@ -105,4 +105,7 @@ docker-compose exec: Execute a command inside a running container defined in a d
 docker-compose build: Build Docker images defined in a docker-compose.yml file.
 
 docker commit my_container my_new_image:latest(running container create new image)
+docker build -t custom_image_name:custom_tag .
+docker build -f MyDockerfile -t custom_image_name:custom_tag .
+
 
