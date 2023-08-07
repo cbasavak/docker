@@ -107,5 +107,11 @@ docker-compose build: Build Docker images defined in a docker-compose.yml file.
 docker commit my_container my_new_image:latest(running container create new image)
 docker build -t custom_image_name:custom_tag .
 docker build -f MyDockerfile -t custom_image_name:custom_tag .
+docker run --cpus=1 my_container_image
+docker run --cpus=0.5 my_container_image
+docker run --memory=1g my_container_image
+docker run --memory=1g --memory-swap=2g my_container_image
+
+
 
 
