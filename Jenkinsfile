@@ -16,6 +16,7 @@ pipeline {
             steps {
                 script {
                     def image = docker.build("architectdevops7/webapp:${env.BUILD_ID}")
+                    #edited 
                     docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-credentials-id') {
                         image.push()
                     }
