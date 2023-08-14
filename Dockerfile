@@ -28,5 +28,5 @@ COPY conf/tomcat-users.xml /opt/tomcat/conf/
 COPY conf/context.xml /opt/tomcat/webapps/manager/META-INF/
 COPY conf/context.xml /opt/tomcat/webapps/host-manager/META-INF/
 
-# Expose port 8080
+# Expose port 8080  Expose
 EXPOSE 8080
